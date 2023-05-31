@@ -1,0 +1,12 @@
+<p>cars data!</p>
+<button (click)="toggleData()">Toggle Data</button>
+<div *ngIf="isDataVisible">
+  <ul>
+    <li *ngFor="let car of cars">
+      <p><strong>Make:</strong> {{ car.make }}</p>
+      <p><strong>Model:</strong> {{ car.model }}</p>
+      <p><strong>Year:</strong> {{ car.year }}</p>
+      <hr>
+    </li>
+  </ul>
+</div>
