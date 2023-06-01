@@ -1,0 +1,20 @@
+<app-cars></app-cars>
+<app-if-comparision></app-if-comparision>
+<app-for-directive></app-for-directive>
+
+<h2>Dynamic ngSwitch</h2>
+
+<div [ngSwitch]="selectedOption">
+  <div *ngSwitchCase="'option1'">
+    Option 1 is selected.
+  </div>
+  <div *ngSwitchCase="'option2'">
+    Option 2 is selected.
+  </div>
+  <div *ngSwitchCase="'option3'">
+    Option 3 is selected.
+  </div>
+  <div *ngSwitchDefault>
+    No option is selected.
+  </div>
+</div>
